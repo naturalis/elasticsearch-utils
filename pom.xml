@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nl.naturalis.es</groupId>
-	<artifactId>naturalis-elastic</artifactId>
+	<artifactId>es-client</artifactId>
 	<version>1.0.0</version>
 
-	<name>Elasticsearch Utility Library</name>
-	<description>Elasticsearch Utility Library</description>
+	<name>Elasticsearch Client Library</name>
+	<description>Elasticsearch Client Library</description>
 
 	<properties>
 
@@ -49,21 +49,15 @@
 	<distributionManagement>
 		<repository>
 			<id>naturalis</id>
-			<url>http://145.136.242.169:8081/repository/naturalis</url>
+			<url>http://mvnrepository.naturalis.nl:8081/repository/naturalis</url>
 		</repository>
 		<snapshotRepository>
 			<id>naturalis</id>
-			<url>http://145.136.242.169:8081/repository/naturalis</url>
+			<url>http://mvnrepository.naturalis.nl:8081/repository/naturalis</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson</groupId>
 			<artifactId>jackson-bom</artifactId>
@@ -85,6 +79,14 @@
 			<groupId>org.elasticsearch.client</groupId>
 			<artifactId>elasticsearch-rest-client</artifactId>
 			<version>7.4.0</version>
+		</dependency>
+
+		<!-- TEST -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
